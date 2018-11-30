@@ -1,0 +1,19 @@
+[user]
+	name = Daniel Nehring
+[core]
+	editor = vim
+	autocrlf = input
+	excludesfile = /home/daniel/.gitignore_global
+[rerere]
+	enabled = 1
+	autoupdate = 1
+[color]
+	ui = auto
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=1800
+[remote "origin"]
+	prune = true
+[gpg]
+	program = gpg2
