@@ -110,7 +110,16 @@ export ANDROID_HOME=$HOME/Android/Sdk
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+alias c='code .'
+alias p='cd ~/Projects'
+alias webapp='cd ~/Projects/sevencooks-webapp'
+alias wp='cd ~/Projects/weekly-planner'
+
+alias vim='nvim'
+alias vimconf='nvim ~/.config/nvim'
+
 alias fuck='sudo $(fc -ln -1)'
+alias yt="youtube-dl -ix --download-archive ~/Music/archive.txt --audio-format mp3 --audio-quality 0 --embed-thumbnail -o '~/Music/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s'"
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
@@ -119,8 +128,6 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/nvm/init-nvm.sh
 
-# Aliases
-alias fuck='sudo $(fc -ln -1)'
-alias yt="youtube-dl -ix --download-archive ~/Music/archive.txt --audio-format mp3 --audio-quality 0 --embed-thumbnail -o '~/Music/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s'"
