@@ -1,6 +1,5 @@
 [user]
 	name = Daniel Nehring
-	email = daniel.nehring@sevencooks.com
 [core]
 	editor = vim
 	autocrlf = input
